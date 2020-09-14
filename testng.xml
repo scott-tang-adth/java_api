@@ -5,7 +5,7 @@
 <suite name="All Test Suite">
     <test name="接口2">
     <classes>
-        <class name="HomeWork"></class>
+        <class name="com.homeworkday11.HomeWork"></class>
         <class name="com.lemon.TestngDemo1"></class>
     </classes>
     </test>

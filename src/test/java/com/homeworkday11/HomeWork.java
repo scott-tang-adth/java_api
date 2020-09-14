@@ -1,3 +1,5 @@
+package com.homeworkday11;
+
 import org.testng.annotations.*;
 
 public class HomeWork {
@@ -5,33 +7,32 @@ public class HomeWork {
     @BeforeSuite
     public void BeforeSuite()
     {
-        System.out.println("HomeWork.BeforeSuite");
+        System.out.println("com.homeworkday11.HomeWork.BeforeSuite");
 
     }//
     @BeforeTest
     public void BeforeTest()
     {
-        System.out.println("HomeWork.BeforeTest");
+        System.out.println("com.homeworkday11.HomeWork.BeforeTest");
 
     }
     @BeforeClass
     public void BeforeClass()
     {
-        System.out.println("HomeWork.BeforeClass");
+        System.out.println("com.homeworkday11.HomeWork.BeforeClass");
 
     }
     @Test
     public void f1()
     {
 
-        System.out.println("HomeWork.f1.Test");
+        System.out.println("com.homeworkday11.HomeWork.f1.Test");
     }
     @BeforeMethod
     public void BeforeMethod()
     {
-        System.out.println("HomeWork.BeforeMethod");
+        System.out.println("com.homeworkday11.HomeWork.BeforeMethod");
 
     }
-
 
 }
