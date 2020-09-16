@@ -15,7 +15,7 @@ public class GetUserInfo {
     public static void main(String[] args) throws IOException {
 
         // 创建get请求并且写入接口地址
-        HttpGet get=new HttpGet("http://api.lemonban.com/futureloan/member/2/info");
+        HttpGet get=new HttpGet("http://api.lemonban.com/futureloan/member/186/info");
         //在get请求上按接口文档添加请求头
          get.addHeader("X-Lemonban-Media-Type","lemonban.v1");
          HttpClient client = HttpClients.createDefault();

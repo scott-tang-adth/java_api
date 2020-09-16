@@ -3,20 +3,19 @@ import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPatch;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import java.util.Arrays;
 
 public class PatchUpdateInfo {
+
     public static void main(String[] args) throws Exception {
         //通过url 创建HttpPactch 对象
         HttpPatch  patch=new HttpPatch("http://api.lemonban.com/futureloan/member/update");
         //加头
-        patch.addHeader("X-Lemonban-Media-Type","lemonban.v1");
+        patch.addHeader("X-Lemonban-Media-Type","lemonban.v2");
         patch.addHeader("Content-Type","application/json");
         //请求参数的json 字符串
         String json="{\"member_id\": 101, \"reg_name\": \"檬檬\"}";

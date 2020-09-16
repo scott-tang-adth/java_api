@@ -40,7 +40,6 @@ public class CetCashPost {
         System.out.println(Arrays.toString(allHeaders));
         //获取响应体
         HttpEntity entity = response.getEntity();
-
         //用EntityUtils工具类来处理 响应体的数据
         String body = EntityUtils.toString(entity);
         System.out.println(body);
